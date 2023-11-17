@@ -71,7 +71,7 @@
 <span class="me-2 text-xs font-weight-bold">100%</span>
 <div>
 <div class="progress">
-<div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+<div class="progress-bar bg-gradient-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
 </div>
 </div>
 </div>
@@ -137,7 +137,7 @@
 <span class="me-2 text-xs font-weight-bold">0%</span>
 <div>
 <div class="progress">
-<div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="width: 0%;"></div>
+<div class="progress-bar bg-gradient-primary" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="width: 0%;"></div>
 </div>
 </div>
 </div>
@@ -203,7 +203,7 @@
 <span class="me-2 text-xs font-weight-bold">100%</span>
 <div>
 <div class="progress">
-<div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+<div class="progress-bar bg-gradient-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
 </div>
 </div>
 </div>

@@ -8,7 +8,7 @@
         <sidenav-item
           url="/dashboard-default"
           :class="getRoute() === 'dashboard-default' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'لوحة القيادة' : 'Dashboard'"
+          navText="Панель керування"
         >
           <template v-slot:icon>
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
@@ -17,9 +17,43 @@
       </li>
       <li class="nav-item">
         <sidenav-item
+          url="/my-garage"
+          :class="getRoute() === 'my-garage' ? 'active' : ''"
+          navText="Мій гараж"
+        >
+          <template v-slot:icon>
+            <i class="ni ni-app text-info text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
+      <li class="nav-item">
+        <sidenav-item
+          url="/calendar"
+          :class="getRoute() === 'calendar' ? 'active' : ''"
+          navText="Календар"
+        >
+          <template v-slot:icon>
+            <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
+      <li class="nav-item">
+        <sidenav-item
+          url="/profile"
+          :class="getRoute() === 'profile' ? 'active' : ''"
+          :navText="this.$store.state.isRTL ? 'حساب تعريفي' : 'Мій профіль'"
+        >
+          <template v-slot:icon>
+            <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
+
+      <li class="nav-item">
+        <sidenav-item
           url="/tables"
           :class="getRoute() === 'tables' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'الجداول' : 'Tables'"
+          navText="Tables"
         >
           <template v-slot:icon>
             <i
@@ -41,19 +75,6 @@
       </li>
       <li class="nav-item">
         <sidenav-item
-          url="/virtual-reality"
-          :class="getRoute() === 'virtual-reality' ? 'active' : ''"
-          :navText="
-            this.$store.state.isRTL ? 'الواقع الافتراضي' : 'Virtual Reality'
-          "
-        >
-          <template v-slot:icon>
-            <i class="ni ni-app text-info text-sm opacity-10"></i>
-          </template>
-        </sidenav-item>
-      </li>
-      <li class="nav-item">
-        <sidenav-item
           url="/rtl-page"
           :class="getRoute() === 'rtl-page' ? 'active' : ''"
           navText="RTL"
@@ -65,30 +86,10 @@
       </li>
       <li class="mt-3 nav-item">
         <h6
-          v-if="this.$store.state.isRTL"
-          class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
-          :class="this.$store.state.isRTL ? 'me-4' : 'ms-2'"
+          class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6 ms-2"
         >
-          صفحات المرافق
+          FOR DEVELOPER
         </h6>
-        <h6
-          v-else
-          class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
-          :class="this.$store.state.isRTL ? 'me-4' : 'ms-2'"
-        >
-          ACCOUNT PAGES
-        </h6>
-      </li>
-      <li class="nav-item">
-        <sidenav-item
-          url="/profile"
-          :class="getRoute() === 'profile' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'حساب تعريفي' : 'Profile'"
-        >
-          <template v-slot:icon>
-            <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
-          </template>
-        </sidenav-item>
       </li>
       <li class="nav-item">
         <sidenav-item

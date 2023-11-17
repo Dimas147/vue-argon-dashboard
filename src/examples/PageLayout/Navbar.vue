@@ -39,7 +39,7 @@
                 aria-hidden="true"
                 :class="isBlur ? 'text-dark' : 'text-white'"
               ></i>
-              Dashboard
+              Панель керування
             </router-link>
           </li>
           <li class="nav-item">
@@ -49,7 +49,7 @@
                 aria-hidden="true"
                 :class="isBlur ? 'text-dark' : 'text-white'"
               ></i>
-              Profile
+              Профіль
             </router-link>
           </li>
           <li class="nav-item">
@@ -69,7 +69,7 @@
                 aria-hidden="true"
                 :class="isBlur ? 'text-dark' : 'text-white'"
               ></i>
-              Sign In
+              Зареєструватися
             </router-link>
           </li>
         </ul>

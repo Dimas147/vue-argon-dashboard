@@ -252,7 +252,7 @@
                   </div>
                   <div class="progress">
                     <div
-                      class="progress-bar bg-gradient-success w-100"
+                      class="progress-bar bg-gradient-primary w-100"
                       role="progressbar"
                       aria-valuenow="100"
                       aria-valuemin="0"
@@ -333,7 +333,7 @@
                   </div>
                   <div class="progress">
                     <div
-                      class="progress-bar bg-gradient-success w-100"
+                      class="progress-bar bg-gradient-primary w-100"
                       role="progressbar"
                       aria-valuenow="100"
                       aria-valuemin="0"

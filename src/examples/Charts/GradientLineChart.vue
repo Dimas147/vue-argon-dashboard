@@ -25,15 +25,15 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Sales overview",
+      default: "Відстань за рік",
     },
     detail1: {
       type: String,
-      default: "4% more",
+      default: "+250 км",
     },
     detail2: {
       type: String,
-      default: "in 2021",
+      default: "більше ніж в минулому році",
     },
   },
 
@@ -42,26 +42,24 @@ export default {
 
     var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke1.addColorStop(1, "rgba(94, 114, 228, 0.2)");
-    gradientStroke1.addColorStop(0.2, "rgba(94, 114, 228, 0.0)");
-    gradientStroke1.addColorStop(0, "rgba(94, 114, 228, 0)");
+    gradientStroke1.addColorStop(1, "#f5365c");
+    gradientStroke1.addColorStop(0, "#5e72e4");
     new Chart(ctx1, {
-      type: "line",
+      type: "bar",
       data: {
         labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [
           {
-            label: "Mobile apps",
+            label: "Відстань",
             tension: 0.4,
             borderWidth: 0,
             pointRadius: 0,
             borderColor: "#4BB543 ",
             backgroundColor: gradientStroke1,
             // eslint-disable-next-line no-dupe-keys
-            borderWidth: 3,
             fill: true,
-            data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
-            maxBarThickness: 6,
+            data: [250, 600, 450, 400, 250, 287, 350, 320, 220],
+            maxBarThickness: 50,
           },
         ],
       },
@@ -79,17 +77,23 @@ export default {
         },
         scales: {
           y: {
+            title: {
+              display: true,
+              text: 'Відстань'
+            },
+            beginAtZero: true,
+            stacked: true,
             grid: {
-              drawBorder: false,
+              drawBorder: true,
               display: true,
               drawOnChartArea: true,
-              drawTicks: false,
-              borderDash: [5, 5],
+              drawTicks: true,
+              borderDash: [10, 10],
             },
             ticks: {
               display: true,
               padding: 10,
-              color: "#fbfbfb",
+              color: "#ccc",
               font: {
                 size: 11,
                 family: "Open Sans",
@@ -99,11 +103,16 @@ export default {
             },
           },
           x: {
+            title: {
+                display: true,
+                text: 'Місяць'
+            },
+            stacked: true,
             grid: {
-              drawBorder: false,
-              display: false,
+              drawBorder: true,
+              display: true,
               drawOnChartArea: false,
-              drawTicks: false,
+              drawTicks: true,
               borderDash: [5, 5],
             },
             ticks: {

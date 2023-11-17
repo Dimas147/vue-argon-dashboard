@@ -53,7 +53,7 @@
               @click="sidebarColor('info')"
             ></span>
             <span
-              class="badge filter bg-gradient-success"
+              class="badge filter bg-gradient-primary"
               data-color="success"
               @click="sidebarColor('success')"
             ></span>
@@ -80,7 +80,7 @@
             class="btn w-100 px-3 mb-2"
             :class="
               this.$store.state.sidebarType === 'bg-white'
-                ? 'bg-gradient-success'
+                ? 'bg-gradient-primary'
                 : 'btn-outline-success'
             "
             @click="sidebarType('bg-white')"
@@ -92,7 +92,7 @@
             class="btn w-100 px-3 mb-2"
             :class="
               this.$store.state.sidebarType === 'bg-default'
-                ? 'bg-gradient-success'
+                ? 'bg-gradient-primary'
                 : 'btn-outline-success'
             "
             @click="sidebarType('bg-default')"

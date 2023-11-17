@@ -17,7 +17,7 @@
         <div class="col">
           <small class="text-white opacity-8">Orders: 60%</small>
           <div class="progress progress-xs my-2">
-            <div class="progress-bar bg-success" style="width: 60%"></div>
+            <div class="progress-bar bg-primary" style="width: 60%"></div>
           </div>
         </div>
         <div class="col">
